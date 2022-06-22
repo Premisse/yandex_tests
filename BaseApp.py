@@ -18,3 +18,7 @@ class BasePage:
 
     def go_to_site(self):
         return self.driver.get(self.base_url)
+
+    def check_url(self):
+        current = self.driver.current_url
+        return current
